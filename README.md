@@ -1,15 +1,23 @@
 # Spring-REST-Api-Tutorial
 
+## Docker
+
 ```
 cd {pwd}
 docker build -t spring_rest .
-docker run -i -t --name spring_rest -p 80:8080-8082 -v {pwd}/SpringTutorial:/SpringTutorial spring_rest
-docker exec -it spring_rest /bin/bash
+docker run -i -t --name spring_rest -p 80:80 -v {pwd}/SpringTutorial:/SpringTutorial spring_rest
 ```
 
-build
+## Build
+
 ```
 docker exec -it spring_rest /bin/bash
 cd /SpringTutorial
 ./gradlew
+```
+
+## Run Spring
+
+```
+java -jar {jar FILE}
 ```
