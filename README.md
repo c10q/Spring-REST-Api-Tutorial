@@ -19,5 +19,14 @@ cd /SpringTutorial
 ## Run Spring
 
 ```
+cd /SpringTutorial/build/libs
 java -jar {jar FILE}
+```
+
+## Mysql
+
+```
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD={password} --name {name} mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+mysql -u root -p
+{password}
 ```
